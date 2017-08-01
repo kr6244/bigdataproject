@@ -1,0 +1,3 @@
+show databases;
+create database d1;
+show databases;

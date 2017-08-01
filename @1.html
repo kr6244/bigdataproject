@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>
+LOGIN FORM
+</title>
+<head>
+<style>
+table, th, td {
+    border: 3px solid black;
+}
+body {
+background-color : powderblue;
+}
+</style>
+
+<body>
+<br><br><br><br>
+<div class="child-div">
+<form name="myForm" method="post" action="/cgi-bin/@1.py"  >
+<hr>
+  <b>USERNAME</b><br>
+<br>
+  <input style="color: black;
+    font-family: Serif;
+    font-size: 100% " type="text" placeholder="Enter Username" name="firstname"><br><br>
+  <b>PASSWORD</b><br>
+<br>
+  <input style="color: black;
+    font-family: Serif;
+    font-size: 100%" type="password" placeholder="Enter Password" name="lastname">
+<br>
+<br>
+<input type="submit" value="Submit">
+<br>
+<br>
+<input type="reset" value="Reset">
+<hr>
+
+</form> 
+
+</div>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["firstname"].value;
+    var y= document.forms["myForm"]["lastname"].value	
+    if (x != "kaushik") {
+        alert("Username is incorrect!!");
+        return false;
+    }
+if(y!="12345"){
+	alert("Password is incorrect!!");
+        return false;
+	}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+table, th, td {
+    border: 3px solid black;
+}
+body {
+background-color : powderblue;
+}
+</style>
+<title> uploading file
+</title>
+</head>
+<body>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<label for="file">File name:</label>
+<input type="file" name="file" id="file" />
+<br><br>
+<b>ENTER REPLICATION FACTOR(for default enter 3)</b> <input type="text" name="rep"> </b>
+<br><br>
+<b>ENTER BLOCK SIZE(in bytes (for default enter 67108864))</b><input type="text" name="blocksize"> </b>
+<br><br>
+<b>ENTER the location where you want to upload file (for default enter /)</b><input type="text" name="locations"> </b>
+<br>
+<br>
+<input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+</html>
